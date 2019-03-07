@@ -5,7 +5,7 @@
 - Final Fantasy
 - Marvel Movies
 
-# Create documentation for both version.
+# Create documentation for both versions.
 
 | Name          | Description   | Type   | Note |
 | ------------- | ------------- | ------ | ---- |
