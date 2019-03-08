@@ -1,0 +1,82 @@
+{
+    "game_title": "Final Fantasy VII",
+    "max_level": 99,
+    "max_HP": 9999,
+    "max_MP": 999,
+    "max_status": 255,
+    "range_classes": [ "Melee", "Ranged" ],
+    "characters": [
+        {
+            "name": "Cloud Strife",
+            "title": "Ex-SOLDIER",
+            "job_classes": [ "Berserker", "Magic Swordsman", "Mercenary", "Swordsman" ],
+            "dialogue": "Let's mosey!",
+            "alignment": "Neutral Good",
+            "affiliations": [ "AVALANCHE", "Earth", "Nibelheim", "Player 1" ],
+            "image": "https://github.com/jakestack/api",
+            "level": 1,
+            "HP": 850,
+            "MP": 25,
+            "range": "Melee",
+            "weapons": [
+                {
+                    "name": "Buster Sword",
+                    "description": "Memento of an old friend.",
+                    "attack": 18,
+                    "attack_accuracy": 96,
+                    "magic_attack": 2,
+                    "ap_growth": 2,
+                    "slots": {
+                        "two": "combo"
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +2" ],
+                    "price": 120,
+                    "obtained_by": "Initial",
+                    "location": "Equipped at game start."
+                },
+                {
+                    "name": "Mythril Saber"
+                }
+                {
+                    "name": "Ultima Weapon"
+                }
+                {
+                    "name": "Fusion Sword"
+                }
+            ],
+            "limit_breaks": [
+                "Braver",
+                "Climhazzard",
+                "Omnislash",
+                "Omnislash V5",
+                "Omnislash V6"
+            ],
+            "status": "WIP"
+        },
+        {
+            "name": "Barret Wallace"
+        },
+        {
+            "name": "Tifa Lockheart"
+        },
+        {
+            "name": "Aerith Gainsborough"
+        },
+        {
+            "name": "Red XIII"
+        },
+        {
+            "name": "Cid Highwind"
+        },
+        {
+            "name": "Cait Sith"
+        },
+        {
+            "name": "Vincent Valentine"
+        },
+        {
+            "name": "Yuffie Kisaragi"
+        }
+    ]
+}
