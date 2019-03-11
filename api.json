@@ -1,5 +1,7 @@
 {
-    "game_title": "Final Fantasy VII",
+    "api": "version 1.0",
+    "name": "Final Fantasy VII API",
+    "image": "https://github.com/jakestack/api",
     "max_level": 99,
     "max_HP": 9999,
     "max_MP": 999,
@@ -21,38 +23,347 @@
             "weapons": [
                 {
                     "name": "Buster Sword",
+                    "image": "https://github.com/jakestack/api",
                     "description": "Memento of an old friend.",
                     "attack": 18,
                     "attack_accuracy": 96,
                     "magic_attack": 2,
-                    "ap_growth": 2,
                     "slots": {
-                        "two": "combo"
+                        "dual": 1,
+                        "single": 0
                     },
                     "materia_growth": 1,
                     "attributes": [ "Magic Attack +2" ],
                     "price": 120,
-                    "obtained_by": "Initial",
-                    "location": "Equipped at game start."
+                    "obtained": {
+                        "0": [ "Initial", "Midgar (start of the game)" ]
+                    }
                 },
                 {
-                    "name": "Mythril Saber"
+                    "name": "Mythril Saber",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Cliche RPG weapon that's made of Mithril.",
+                    "attack": 23,
+                    "attack_accuracy": 98,
+                    "magic_attack": 4,
+                    "slots": {
+                        "dual": 1,
+                        "single": 1
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +4" ],
+                    "price": 1000,
+                    "obtained": {
+                        "0": [ "Buy", "Kalm" ],
+                        "1": [ "Buy", "Junon (before Highwind)" ]
+                    }
                 },
                 {
-                    "name": "Ultima Weapon"
+                    "name": "Hardedge",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "The choice for 3rd Class SOLDIERs.",
+                    "attack": 32,
+                    "attack_accuracy": 98,
+                    "magic_attack": 6,
+                    "slots": {
+                        "dual": 1,
+                        "single": 2
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +6" ],
+                    "price": 1500,
+                    "obtained": {
+                        "0": [ "Buy", "Gongaga" ],
+                        "1": [ "Buy", "Junon" ],
+                        "2": [ "Steal", "SOLDIER:3rd in Shinra HQ" ]
+                    }
                 },
                 {
-                    "name": "Fusion Sword"
+                    "name": "Butterfly Edge",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Float like a butterfly, sting like a bee.",
+                    "attack": 39,
+                    "attack_accuracy": 100,
+                    "magic_attack": 8,
+                    "slots": {
+                        "dual": 2,
+                        "single": 0
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +8" ],
+                    "price": 2800,
+                    "obtained": {
+                        "0": [ "Buy", "Cosmo Canyon" ]
+                    }
+                },
+                {
+                    "name": "Enhance Sword",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Slot-happy.",
+                    "attack": 43,
+                    "attack_accuracy": 107,
+                    "magic_attack": 16,
+                    "slots": {
+                        "dual": 4,
+                        "single": 0
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +6" ],
+                    "price": 12000,
+                    "obtained": {
+                        "0": [ "Find", "Gaea's Cliff" ],
+                        "1": [ "Buy", "Junon (after Highwind)" ]
+                    }
+                },
+                {
+                    "name": "Organics",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Healthystuff.",
+                    "attack": 62,
+                    "attack_accuracy": 103,
+                    "magic_attack": 15,
+                    "slots": {
+                        "dual": 2,
+                        "single": 2
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +15" ],
+                    "price": 12000,
+                    "obtained": {
+                        "0": [ "Buy", "Icicle Inn" ]
+                    }
+                },
+                {
+                    "name": "Crystal Sword",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Precious wonder.",
+                    "attack": 76,
+                    "attack_accuracy": 105,
+                    "magic_attack": 19,
+                    "slots": {
+                        "dual": 3,
+                        "single": 0
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +19" ],
+                    "price": 18000,
+                    "obtained": {
+                        "0": [ "Buy", "Mideel" ]
+                    }
+                },
+                {
+                    "name": "Force Stealer",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Sacrifice damage for enhanced Materia growth.",
+                    "attack": 36,
+                    "attack_accuracy": 100,
+                    "magic_attack": 7,
+                    "slots": {
+                        "dual": 0,
+                        "single": 3
+                    },
+                    "materia_growth": 2,
+                    "attributes": [ "Magic Attack +7" ],
+                    "price": 2200,
+                    "obtained": {
+                        "0": [ "Buy", "North Corel" ],
+                        "1": [ "Find", "Junon (get 100+ points during Rufus's send-off)" ]
+                    }
+                },
+                {
+                    "name": "Rune Blade",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "A very un-magical blade.",
+                    "attack": 40,
+                    "attack_accuracy": 108,
+                    "magic_attack": 9,
+                    "slots": {
+                        "dual": 0,
+                        "single": 4
+                    },
+                    "materia_growth": 2,
+                    "attributes": [ "Magic Attack +9" ],
+                    "price": 3800,
+                    "obtained": {
+                        "0": [ "Buy", "Junon (after Highwind)" ],
+                        "1": [ "Find", "Mt. Nibel (first area on a mountain)" ]
+                    }
+                },
+                {
+                    "name": "Murasame",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Sword for village folks.",
+                    "attack": 51,
+                    "attack_accuracy": 100,
+                    "magic_attack": 12,
+                    "slots": {
+                        "dual": 2,
+                        "single": 1
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +12" ],
+                    "price": 6500,
+                    "obtained": {
+                        "0": [ "Buy", "Wutai Village" ]
+                    }
+                },
+                {
+                    "name": "Nail Bat",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Cloud and the gang.",
+                    "attack": 70,
+                    "attack_accuracy": 100,
+                    "magic_attack": 0,
+                    "slots": {
+                        "dual": 0,
+                        "single": 0
+                    },
+                    "materia_growth": 0,
+                    "attributes": [ "Critical +4% chance" ],
+                    "price": 2800,
+                    "obtained": {
+                        "0": [ "Buy", "Junon (after Highwind)" ],
+                        "1": [ "Find", "Temple of the Ancients (in area with clock, get knocked off by hands. Win battle and open chest)" ]
+                    }
+                },
+                {
+                    "name": "Yoshiyuki",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Empowered by the fallen.",
+                    "attack": 56,
+                    "attack_accuracy": 100,
+                    "magic_attack": 9,
+                    "slots": {
+                        "dual": 0,
+                        "single": 2
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +9", "Attack multiplied by number of dead allies." ],
+                    "price": 4200,
+                    "obtained": {
+                        "0": [ "Find", "Rocket Town (Part 1 - talk to man who watches rocket twice)" ]
+                    }
+                },
+                {
+                    "name": "Apocalypse",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Harbringer of high-level Materia",
+                    "attack": 88,
+                    "attack_accuracy": 110,
+                    "magic_attack": 43,
+                    "slots": {
+                        "dual": 0,
+                        "single": 3
+                    },
+                    "materia_growth": 3,
+                    "attributes": [ "Magic Attack +43", "Spirit +16" ],
+                    "price": 2,
+                    "obtained": {
+                        "0": [ "Find", "Ancient Forest (Final Room)" ]
+                    }
+                },
+                {
+                    "name": "Heaven's Cloud",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Too much heaven.",
+                    "attack": 93,
+                    "attack_accuracy": 100,
+                    "magic_attack": 31,
+                    "slots": {
+                        "dual": 0,
+                        "single": 6
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +31" ],
+                    "price": 2,
+                    "obtained": {
+                        "0": [ "Find", "Gelnika (in treasure chest in first room)" ]
+                    }
+                },
+                {
+                    "name": "Ragnarok",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Getting near the end.",
+                    "attack": 97,
+                    "attack_accuracy": 105,
+                    "magic_attack": 43,
+                    "slots": {
+                        "dual": 3,
+                        "single": 0
+                    },
+                    "materia_growth": 1,
+                    "attributes": [ "Magic Attack +43", "Spirit +35" ],
+                    "price": 2,
+                    "obtained": {
+                        "0": [ "Drop", "Proud Clod (Midgar Sector 8)" ]
+                    }
+                },
+                {
+                    "name": "Ultima Weapon",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "'nuff said.",
+                    "attack": 100,
+                    "attack_accuracy": 110,
+                    "magic_attack": 51,
+                    "slots": {
+                        "dual": 4,
+                        "single": 0
+                    },
+                    "materia_growth": 0,
+                    "attributes": [ "Magic Attack +51", "Spirit +24", "The more HP Cloud has, the more damage it deals." ],
+                    "price": 2,
+                    "obtained": {
+                        "0": [ "Drop", "Ultimate Weapon (final battle over Cosmo Canyon)" ]
+                    }
+                },
+                {
+                    "name": "Fusion Sword",
+                    "image": "https://github.com/jakestack/api",
+                    "description": "Cloud is just too cool.",
+                    "attack": 999,
+                    "attack_accuracy": 255,
+                    "magic_attack": 255,
+                    "slots": {
+                        "dual": 4,
+                        "single": 0
+                    },
+                    "materia_growth": 3,
+                    "attributes": [ "All status +255", "Breaks damage limit, FFX-style.", "Breaks status limit." ],
+                    "price": 0,
+                    "obtained": {
+                        "0": [ "Watch", "Final Fantasy VII: Advent Children" ]
+                    }
                 }
             ],
-            "limit_breaks": [
-                "Braver",
-                "Climhazzard",
-                "Omnislash",
-                "Omnislash V5",
-                "Omnislash V6"
-            ],
-            "status": "WIP"
+            "limit_breaks": {
+                "lvl_1": {
+                    "0": [ "Braver", "Initial", "https://github.com/jakestack/api" ],
+                    "1": [ "Cross-Slash", "8 Limit Breaks", "https://github.com/jakestack/api" ]
+                },
+                "lvl_2": {
+                    "0": [ "Blade Beam", "120 kills", "https://github.com/jakestack/api" ],
+                    "1": [ "Climhazzard", "7 Limit Breaks", "https://github.com/jakestack/api" ]
+                },
+                "lvl_3": {
+                    "0": [ "Meteorain", "320 kills", "https://github.com/jakestack/api" ],
+                    "1": [ "Finishing Touch", "6 Limit Breaks", "https://github.com/jakestack/api" ]
+                },
+                "lvl_4": {
+                    "0": [ "Omnislash", "'Omnislash' item", "https://github.com/jakestack/api" ]
+                },
+                "lvl_5": {
+                    "0": [ "Omnislash V5", "FFVIIAC", "https://github.com/jakestack/api" ],
+                    "1": [ "Omnislash V6", "FFVIIAC: Complete", "https://github.com/jakestack/api" ]
+                }
+            },
+            "status": {
+                "strength": 28,
+                "dexterity": 16,
+                "vitality": 24,
+                "magic": 28,
+                "spirit": 25,
+                "luck": 21
+            }
         },
         {
             "name": "Barret Wallace"
