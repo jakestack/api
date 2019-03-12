@@ -1,6 +1,6 @@
 {
     "api": "version 1.0",
-    "name": "Final Fantasy VII API",
+    "name": "Final Fantasy VII Character API",
     "image": "https://github.com/jakestack/api",
     "max_level": 99,
     "max_HP": 9999,
